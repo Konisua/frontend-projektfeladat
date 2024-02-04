@@ -13,18 +13,29 @@
     <style></style>
   </head>
   <body>
-    <div class="container container-mainpage">
+    <div class="container container-fullpage">
       <header class="container container-header">
         <h1 class="menu-title">ACME Inc.</h1>
         <div class="vonal"></div>
         <nav>
-          <ul class="container container-menu-elements menu-elements">
-            <li>Céginformáció</li>
-            <li>Szolgáltatásaink</li>
-            <li>Kapcsolat</li>
+          <ul class="container container-menu-elements">
+            <li class="menu-elements">Céginformáció</li>
+            <li class="menu-elements">Szolgáltatásaink</li>
+            <li class="menu-elements">Kapcsolat</li>
           </ul>
         </nav>
       </header>
     </div>
+
+    <!-- function setDivHeight() {
+      var windowHeight = window.innerHeight;
+      var browserBarHeight = window.outerHeight - window.innerHeight;
+    
+      var divHeight = windowHeight - browserBarHeight;
+      document.querySelector('.my-div').style.height = divHeight + 'px';
+    }
+    
+    window.onload = setDivHeight;
+    window.onresize = setDivHeight; -->
   </body>
 </html>
