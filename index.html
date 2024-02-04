@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kupás Norbert" />
+    <meta
+      name="description"
+      content="Projekt feladat frontend developer képzésre."
+    />
     <link rel="stylesheet" href="reset.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap"
@@ -10,32 +15,21 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>ACME Inc.</title>
-    <style></style>
   </head>
+
   <body>
     <div class="container container-fullpage">
       <header class="container container-header">
         <h1 class="menu-title">ACME Inc.</h1>
-        <div class="vonal"></div>
+        <div class="v-line"></div>
         <nav>
           <ul class="container container-menu-elements">
-            <li class="menu-elements">Céginformáció</li>
-            <li class="menu-elements">Szolgáltatásaink</li>
-            <li class="menu-elements">Kapcsolat</li>
+            <li class="menu-elements"><a href="ceginformacio.html">Céginformáció</a></li>
+            <li class="menu-elements"><a href="szolgaltatasok.html">Szolgáltatásaink</a></li>
+            <li class="menu-elements"><a href="kapcsolat.html">Kapcsolat</a></li>
           </ul>
         </nav>
       </header>
     </div>
-
-    <!-- function setDivHeight() {
-      var windowHeight = window.innerHeight;
-      var browserBarHeight = window.outerHeight - window.innerHeight;
-    
-      var divHeight = windowHeight - browserBarHeight;
-      document.querySelector('.my-div').style.height = divHeight + 'px';
-    }
-    
-    window.onload = setDivHeight;
-    window.onresize = setDivHeight; -->
   </body>
 </html>

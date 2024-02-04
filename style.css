@@ -17,7 +17,11 @@ body {
   background: var(--bg-light);
 }
 
-.vonal {
+a {
+  color: var(--color-light);
+}
+
+.v-line {
   border-left: 1px solid var(--color-light);
 }
 
@@ -35,7 +39,11 @@ body {
     background: var(--bg-dark);
   }
 
-  .vonal {
+  a {
+    color: var(--color-dark);
+  }
+
+  .v-line {
     border-left: 1px solid var(--color-dark);
   }
 
@@ -48,6 +56,10 @@ body {
 /* Formázás */
 body {
   font-family: "Roboto";
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 .container {
   display: flex;
@@ -75,7 +87,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-.vonal {
+.v-line {
   height: 219px;
 }
 .menu-title {
@@ -92,4 +104,3 @@ body {
   transition: all 1s ease-out;
   margin-left: -15px;
 }
-/* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 55px #ff00de, 0 0 75px #ff00de; */
