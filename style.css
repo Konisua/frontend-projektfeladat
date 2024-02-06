@@ -10,7 +10,7 @@
   --glow-color-dark: #ff00de;
 }
 
-/* Light téma */
+/* Light style */
 
 body {
   color: var(--color-light);
@@ -44,7 +44,7 @@ a {
 .link-szolgaltatas {
   color: var(--color-light);
 }
-/* Dark téma */
+/* Dark style */
 
 @media screen and (prefers-color-scheme: dark) {
   body {
@@ -80,7 +80,7 @@ a {
     color: var(--color-dark);
   }
 }
-/* Formázás */
+/* Layout */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -201,5 +201,12 @@ a {
   }
 }
 .link-szolgaltatas:hover {
-  animation: linkAnim 1s ease-in-out infinite;
+  animation: linkAnim 0.7s ease-in-out infinite;
+}
+
+.container-rolunk {
+  display: inline-flex;
+  padding: 80px;
+  align-items: center;
+  gap: 80px;
 }
