@@ -180,10 +180,26 @@ a {
   align-items: center;
   line-height: normal;
 }
+
 .link-szolgaltatas {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
   align-self: flex-end;
+  text-wrap: nowrap;
+}
+@keyframes linkAnim {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: -10px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+.link-szolgaltatas:hover {
+  animation: linkAnim 1s ease-in-out infinite;
 }
