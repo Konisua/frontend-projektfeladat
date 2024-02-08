@@ -3,17 +3,20 @@
 :root {
   --bg-light: linear-gradient(117deg, #eeeef0 0%, #ccccd8 100%);
   --bg-color-light: #121215;
-  --color-light: rgba(18, 18, 21, 1);
+  --color-light: #121215;
   --glow-color-light: #ff2de3;
   --rolunk-text-color-light: #eeeef0;
   --rolunk-footer-color-light: #d166ff;
 
   --bg-dark: linear-gradient(117deg, #121215 0%, #262629 100%);
   --bg-color-dark: #fff;
-  --color-dark: rgba(255, 255, 255, 1);
+  --color-dark: #fff;
   --glow-color-dark: #ff00de;
   --rolunk-text-color-dark: #000;
   --rolunk-footer-color-dark: #7000a0;
+
+  --bg-ACME: linear-gradient(90deg, #7000a0 0%, #a0009b 100%);
+  --left-margin-ACME: calc((100vw - 1128px + 200px) / 2);
 }
 
 /* Light style */
@@ -25,6 +28,11 @@ body {
 
 a {
   color: var(--color-light);
+}
+
+.container-footer {
+  background: var(--bg-ACME);
+  color: var(--bg-color-dark);
 }
 
 .v-line {
@@ -259,9 +267,40 @@ a {
   width: 378px;
   font-size: 30px;
   font-style: italic;
+  letter-spacing: -0.3px;
 }
 .container-rolunk h3 {
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
+}
+.container-bemutatkozas {
+  width: 1226px;
+  gap: 80px;
+  align-self: center;
+  align-items: center;
+  margin: 80px 107px 89px 107px;
+}
+.container-bemutatkozas h4 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+}
+.container-bemutatkozas section {
+  height: 476px;
+  justify-content: space-between;
+}
+
+.container-bemutatkozas section p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container-footer div {
+  text-align: center;
+  font-size: 120px;
+  font-weight: 400;
+  letter-spacing: 200px;
+  margin: 75px auto 75px var(--left-margin-ACME);
 }
