@@ -2,12 +2,16 @@
 
 :root {
   --bg-light: linear-gradient(116.82deg, #eeeef0 0%, #ccccd8 100%);
+  --bg-color-light: #121215;
   --color-light: rgba(18, 18, 21, 1);
   --glow-color-light: #ff2de3;
+  --rolunk-text-color-light: #eeeef0;
 
   --bg-dark: linear-gradient(116.82deg, #121215 0%, #262629 100%);
+  --bg-color-dark: #fff;
   --color-dark: rgba(255, 255, 255, 1);
   --glow-color-dark: #ff00de;
+  --rolunk-text-color-dark: #000;
 }
 
 /* Light style */
@@ -44,6 +48,10 @@ a {
 .link-szolgaltatas {
   color: var(--color-light);
 }
+.container-rolunk {
+  background-color: var(--bg-color-light);
+  color: var(--rolunk-text-color-light);
+}
 /* Dark style */
 
 @media screen and (prefers-color-scheme: dark) {
@@ -78,6 +86,10 @@ a {
   }
   .link-szolgaltatas {
     color: var(--color-dark);
+  }
+  .container-rolunk {
+    background-color: var(--bg-color-dark);
+    color: var(--rolunk-text-color-dark);
   }
 }
 /* Layout */
@@ -209,4 +221,26 @@ a {
   padding: 80px;
   align-items: center;
   gap: 80px;
+}
+.container-rolunk-boxes {
+  gap: 73px;
+}
+.box-rolunk {
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 384px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+.box-rolunk img {
+  width: 168px;
+  height: 168px;
+}
+.box-rolunk-footer {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
 }
