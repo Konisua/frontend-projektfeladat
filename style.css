@@ -1,17 +1,19 @@
 /* Változók */
 
 :root {
-  --bg-light: linear-gradient(116.82deg, #eeeef0 0%, #ccccd8 100%);
+  --bg-light: linear-gradient(117deg, #eeeef0 0%, #ccccd8 100%);
   --bg-color-light: #121215;
   --color-light: rgba(18, 18, 21, 1);
   --glow-color-light: #ff2de3;
   --rolunk-text-color-light: #eeeef0;
+  --rolunk-footer-color-light: #d166ff;
 
-  --bg-dark: linear-gradient(116.82deg, #121215 0%, #262629 100%);
+  --bg-dark: linear-gradient(117deg, #121215 0%, #262629 100%);
   --bg-color-dark: #fff;
   --color-dark: rgba(255, 255, 255, 1);
   --glow-color-dark: #ff00de;
   --rolunk-text-color-dark: #000;
+  --rolunk-footer-color-dark: #7000a0;
 }
 
 /* Light style */
@@ -44,6 +46,7 @@ a {
 }
 .title-weboldalak {
   color: var(--color-light);
+  text-shadow: 0px 0px 15px #fff;
 }
 .link-szolgaltatas {
   color: var(--color-light);
@@ -51,6 +54,9 @@ a {
 .container-rolunk {
   background-color: var(--bg-color-light);
   color: var(--rolunk-text-color-light);
+}
+.box-rolunk-footer {
+  color: var(--rolunk-footer-color-light);
 }
 /* Dark style */
 
@@ -83,6 +89,7 @@ a {
   }
   .title-weboldalak {
     color: var(--color-dark);
+    text-shadow: none;
   }
   .link-szolgaltatas {
     color: var(--color-dark);
@@ -90,6 +97,9 @@ a {
   .container-rolunk {
     background-color: var(--bg-color-dark);
     color: var(--rolunk-text-color-dark);
+  }
+  .box-rolunk-footer {
+    color: var(--rolunk-footer-color-dark);
   }
 }
 /* Layout */
@@ -105,6 +115,9 @@ a {
 }
 .flex-column {
   flex-direction: column;
+}
+.gap-50 {
+  gap: 50px;
 }
 .container {
   display: flex;
@@ -125,7 +138,7 @@ a {
 .container-top-menu {
   align-items: center;
   justify-content: space-between;
-  width: 1440px;
+  /* width: 1440px; */
   height: 80px;
   padding-left: 32px;
   padding-right: 32px;
@@ -149,6 +162,7 @@ a {
 .container-weboldalak {
   margin: 71px 80px 80px 80px;
   height: 471px;
+  width: 1280px;
 }
 .v-line {
   height: 219px;
@@ -200,16 +214,17 @@ a {
   text-decoration-line: underline;
   align-self: flex-end;
   text-wrap: nowrap;
+  margin-left: -100px;
 }
 @keyframes linkAnim {
   0% {
-    margin-left: 0px;
+    margin-left: -100px;
   }
   50% {
-    margin-left: -10px;
+    margin-left: -110px;
   }
   100% {
-    margin-left: 0px;
+    margin-left: -100px;
   }
 }
 .link-szolgaltatas:hover {
@@ -227,11 +242,8 @@ a {
 }
 .box-rolunk {
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
   width: 384px;
-  font-size: 30px;
-  font-style: italic;
   font-weight: 400;
   line-height: normal;
 }
@@ -241,6 +253,15 @@ a {
 }
 .box-rolunk-footer {
   font-size: 24px;
+  align-self: flex-end;
+}
+.box-rolunk-text {
+  width: 378px;
+  font-size: 30px;
+  font-style: italic;
+}
+.container-rolunk h3 {
+  font-size: 40px;
+  font-style: italic;
   font-weight: 400;
-  line-height: normal;
 }
