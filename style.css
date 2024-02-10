@@ -302,3 +302,19 @@ a {
   letter-spacing: 200px;
   margin: 75px auto 75px var(--left-margin-ACME);
 }
+.container-szolgaltatasok {
+  display: flex;
+  width: 1280px;
+  justify-content: space-between;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  align-self: center;
+  margin: 98px 80px 80px 80px;
+}
+#szolg-h2 {
+  align-self: center;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 71px;
+}
