@@ -35,7 +35,7 @@ class SzolgBoxComponent extends HTMLElement {
     <p id="title-text">Sample title text</p>
     <p id="content-text">Sample content text</p>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg">
+  <svg id="svgDefinitions">
     <defs>
       <path
         id="tervezesIkon"
@@ -84,7 +84,7 @@ class SzolgBoxComponent extends HTMLElement {
     let iconElement = this.shadowRoot.querySelector(this.getAttribute("icon"));
     let bbox = iconElement.getBBox();
     this.shadowRoot.querySelector("#useIcon").setAttribute("href", this.getAttribute("icon"));
-    this.shadowRoot.querySelector("#icon").setAttribute("width", bbox.width);
+    this.shadowRoot.querySelector("#icon").setAttribute("width", bbox.width+2);
     this.shadowRoot.querySelector("#icon").setAttribute("height", bbox.height);
     // this.shadowRoot
     //   .querySelector("#icon")
@@ -93,6 +93,7 @@ class SzolgBoxComponent extends HTMLElement {
       this.getAttribute("title-text");
     this.shadowRoot.querySelector("#content-text").innerText =
       this.getAttribute("content-text");
+      this.shadowRoot.querySelector("#svgDefinitions").setAttribute("display","none");
 
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         this.shadowRoot
