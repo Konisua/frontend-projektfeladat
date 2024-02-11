@@ -303,7 +303,6 @@ a {
   margin: 75px auto 75px var(--left-margin-ACME);
 }
 .container-szolgaltatasok {
-  display: flex;
   width: 1280px;
   justify-content: space-between;
   row-gap: 50px;
@@ -311,10 +310,34 @@ a {
   align-self: center;
   margin: 98px 80px 80px 80px;
 }
-#szolg-h2 {
+.titles {
   align-self: center;
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
   margin-top: 71px;
+}
+.container-kapcsolatok {
+  width: 1280px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 80px 87px 80px;
+}
+
+.container-kapcsolatok > section {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  width: 702px;
+}
+.container-kapcsolatok > section > p {
+  margin: 1em;
+}
+
+.container-kapcsolatok span {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
 }
