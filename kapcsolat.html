@@ -6,15 +6,13 @@
     <meta name="author" content="Kupás Norbert" />
     <meta
       name="description"
-      content="Projekt feladat frontend developer képzésre."
-    />
+      content="Projekt feladat frontend developer képzésre." />
     <link rel="stylesheet" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>ACME Inc. - kapcsolat</title>
   </head>
@@ -75,10 +73,62 @@
             height="722"
             style="border: 0"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </aside>
       </div>
+
+      <form
+        class="container container-form"
+        action=""
+        name="ACME-form"
+        onsubmit="">
+        <div class="container container-form container-form-inner-box">
+          <div class="container form-label-group flex-column">
+            <label class="" for="name-input">Név:</label>
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="name-input"
+              placeholder="pl: Jakab pista"
+              required
+              minlength="4" />
+          </div>
+          <div class="container form-label-group flex-column">
+            <label class="" for="email-input">E-mail:</label>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="valaki@valami.hu"
+              required />
+          </div>
+
+          <div class="container form-label-group flex-column">
+            <label class="" for="phonenumber-input">Telszám:</label>
+            <input
+              class="form-input"
+              type="tel"
+              name="phonenumber"
+              id="phonenumber-input"
+              placeholder="+36102345678" />
+          </div>
+
+          <div class="container form-label-group flex-column">
+            <label class="" for="message-input">Üzenet:</label>
+            <textarea
+              class="form-textarea"
+              name="message"
+              id="message-input"
+              cols="30"
+              rows="10"></textarea>
+          </div>
+        </div>
+        <div class="container">
+          <button class="" type="submit">Küldés</button>
+        </div>
+      </form>
 
       <footer class="container container-footer">
         <div>ACME</div>

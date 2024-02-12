@@ -348,3 +348,23 @@ a {
 .container-kapcsolatok a {
   text-decoration: underline;
 }
+.form-input {
+  width: 360px;
+  height: 50px;
+  flex-shrink: 0;
+}
+.form-textarea {
+  width: 1280px;
+  height: 143px;
+  flex-shrink: 0;
+}
+.container-form {
+  flex-wrap: wrap;
+}
+.form-label-group {
+  gap: 1em;
+}
+.container-form-inner-box {
+  width: 1280px;
+  height: 550px;
+}
