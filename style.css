@@ -361,7 +361,7 @@ a {
   line-height: normal;
   width: 702px;
 }
-.container-kapcsolatok > span {
+.container-kapcsolatok > section > span {
   font-weight: 700;
 }
 .container-kapcsolatok ul {
@@ -537,7 +537,7 @@ textarea {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 50px;
-    margin: 77px auto 76px calc((100vw - 310px + 50px)/2);
+    margin: 77px auto 76px calc((100vw - 310px + 50px) / 2);
   }
 
   /* szolgaltatasok.html */
@@ -553,5 +553,53 @@ textarea {
     align-self: center;
     flex-direction: column;
     margin: 32px 32px 32px 32px;
+  }
+
+  /* kapcsolatok.html */
+
+  .container-kapcsolatok {
+    width: auto;
+    margin: 32px;
+    align-self: center;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .container-kapcsolatok > section {
+    width: auto;
+    letter-spacing: -0.5px;
+  }
+  .container-kapcsolatok iframe {
+    width: auto;
+    min-width: 311px;
+    height: 400px;
+  }
+  .container-form-inner-box {
+    width: auto;
+    gap: 26px;
+    margin: 32px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .form-textarea {
+    min-width: auto;
+    height: 143px;
+    flex-shrink: 0;
+    resize: none;
+  }
+  .container-form-inputs {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .form-input {
+    width: 300px;
+  }
+  .container-form-button {
+    align-self: center;
+    margin-top: calc(32px - 26px);
+}
+.container-form textarea {
+  border-width: 1px;
+  border-style: solid;
+  margin-top: -15px;
 }
 }
