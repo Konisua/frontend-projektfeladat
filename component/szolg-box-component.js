@@ -9,7 +9,7 @@ class SzolgBoxComponent extends HTMLElement {
        }
        .container {
         display: flex;
-        width: 379px;
+        max-width: 379px;
         flex-direction: column;
         align-items: center;
         gap: 32px;
@@ -111,4 +111,5 @@ class SzolgBoxComponent extends HTMLElement {
     }
   }
 }
+
 customElements.define("szolg-box-component", SzolgBoxComponent);
